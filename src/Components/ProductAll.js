@@ -27,8 +27,8 @@ const ProductAll = ({authenticate}) => {
 
   const getProduct = async () => {
     const keyword = query.get('q') || '';
-    let url = `http://localhost:3000/products/?q=${keyword}`;
-    // let url = `https://my-json-server.typicode.com/JungHyun-Ahn/React_ShoppingMall/products?q=${searchQuery}`;
+    // let url = `http://localhost:3000/products/?q=${keyword}`;
+    let url = `https://my-json-server.typicode.com/JungHyun-Ahn/React_shoppingMall_AJH/products?q=${keyword}`;
     let response = await fetch(url);
     let data = await response.json();
     // console.log(data);

@@ -12,8 +12,8 @@ const ProductDetail = () => {
   const [loading, setLoading] = useState(false);
 
   const getProductDetail = async () => {
-    let url = `http://localhost:3000/products/${id}`;
-    // let url = `https://my-json-server.typicode.com/JungHyun-Ahn/React_ShoppingMall/products/${id}`;
+    // let url = `http://localhost:3000/products/${id}`;
+    let url = `https://my-json-server.typicode.com/JungHyun-Ahn/React_shoppingMall_AJH/products/${id}`;
 
     let response = await fetch(url);
     let data = await response.json();
